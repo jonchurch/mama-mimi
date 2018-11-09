@@ -24,13 +24,13 @@ header#site-header {
 	background-color: black;
 	display: block;
 	width: 50px;
+  float: right;
 }
 
 body {
 	background-color: gray;
-  background-image: 
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
