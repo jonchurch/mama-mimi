@@ -1,11 +1,31 @@
 /* CSS files add styling rules to your content */
 
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+#header {
+	background-image: url("CREW.png");
+	height: 225px;
+	width: 225px;
+	background-repeat: no-repeat;
+	float:right;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+#text {
+	padding: 1%;
+	color: white;
+	font-family: Monospace;
+}
+
+.list {
+	float: left;
+	font-family: Monospace;
+	padding: 1px;
+}
+
+.list p:hover {
+	background-color: black;
+	display: block;
+	width: 50px;
+}
+
+body {
+	background-color: gray;
 }
