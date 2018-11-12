@@ -36,12 +36,12 @@ a {
 }
 
 .rick {
-  transform: translate(0px,0px)
+  transform: translate(0px,0px);
   animation: move 5s linear 3s infinite alternate;
 }
 
 /*animations*/
 @keyframes move {
   from {transform: translate(0px,0px)}
-  to {transform: translate(0px,20px)}
+  to {transform: translate(200px,0px)}
 }
