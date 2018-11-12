@@ -7,15 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script language="JavaScript">
+<!--
+//you can assign the initial color of the background here
+r=255;
+g=255;
+b=255;
+flag=0;
+t=new Array;
+o=new Array;
+d=new Array;
+
+function hex(a,c)
+{
+t[a]=Math.floor(c/16)
+o[a]=c%16
+switch (t[a])
+{
+case 10:
+t[a]='A';
+break;
+case 11:
+t[a]='B';
+break;
+case 12:
+t[a]='C';
+break;
+case 13:
+t[a]='D';
+break;
+case 14:
+t[a]='E';
+break;
+case 15:
+t[a]='F';
+break;
+default:
+break;
+}
+switch (o[a])
+{
+case 10:
+o[a]='A';
+break;
+case 11:
+o[a]='B';
+break;
+case 12:
+o[a]='C';
+break;
+case 13:
+o[a]='D';
+break;
+case 14:
+o[a]='E';
+break;
+case 15:
+o[a]='F';
+break;
+default:
+break;
+}
+}
+
+function ran(a,c)
+{
+if ((Math.random()>2/3||c==0)&&c<255)
+{
+c++
+d[a]=2;
+}
+else
+{
+if ((Math.random()<=1/2||c==255)&&c>0)
+{
+c--
+d[a]=1;
+}
+else d[a]=0;
+}
+return c
+}
+function do_it(a,c)
+{
+if ((d[a]==2&&c<255)||c==0)
+{
+c++
+d[a]=2
+}
+else
+if ((d[a]==1&&c>0)||c==255)
+{
+c--;
+d[a]=1;
+}
+if (a==3)
+{
+if (d[1]==0&&d[2]==0&&d[3]==0)
+flag=1
+}
+return c
+}
+function disco()
+{
+if (flag==0)
+{
+r=ran(1, r);
+g=ran(2, g);
+b=ran(3, b);
+hex(1,r)
+hex(2,g)
+hex(3,b)
+document.body.style.background="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3]
+flag=50
+}
+else
+{
+r=do_it(1, r)
+g=do_it(2,g)
+b=do_it(3,b)
+hex(1,r)
+hex(2,g)
+hex(3,b)
+document.body.style.background="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3]
+flag--
+}
+
+setTimeout('disco()',1)
+}
+//-->
+</script>
   </head>
-  <body>
-    <header id="site-header"></header>
+  <body onload="disco()">
+    <header id="site-header">
+      <h1><a href="site2/"><p>Rickroll</p></a></h1>
+    </header>
     <content id="site-content">
-      <div class="troll">
-        <embed src="https://cdn.glitch.com/35c9e1e6-5a4a-463d-983d-280a07d767c3%2FRick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up%20(Video).mp3?1541792810841" width="0" height="0" loop="true" autostart="true" hidden="true" />
-        <div><a href="site2/"><p>Rickroll</p></a></div>
-      </div>
-      <div class="mainArea">
+      <div class="mainArea" style="display: none;">
         <h3>
           Welcome to the internet
         </h3>
@@ -32,6 +160,7 @@
         </ul>
         <div style="text-align: center; width: 100%">
           <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" width="640" height="530" frameborder="0" style="pointer-events: none;" class="rick"></iframe>
+          <embed src="https://cdn.glitch.com/35c9e1e6-5a4a-463d-983d-280a07d767c3%2FRick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up%20(Video).mp3?1541792810841" width="0" height="0" loop="true" autostart="true" hidden="true" />
         </div>
       </div>
     </content>

@@ -1,7 +1,6 @@
 /* CSS files add styling rules to your content */
 
 header#site-header {
-	background-image: url("https://cdn.glitch.com/35c9e1e6-5a4a-463d-983d-280a07d767c3%2FCREW.png?1541791330422");
 	height: 225px;
 	width: 225px;
 	background-repeat: no-repeat;
@@ -28,7 +27,7 @@ header#site-header {
 }
 
 body {
-	background-color: gray;
+	background-color: #FFF;
 }
 
 a {
