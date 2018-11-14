@@ -9,36 +9,13 @@ header#site-header h1 {
   font-family: "Gloria Hallelujah", cursive;
 }
 
-#text {
-	padding: 1%;
-	color: white;
-	font-family: Monospace;
-}
-
-.list {
-	float: left;
-	font-family: Monospace;
-	padding: 1px;
-}
-
-.list p:hover {
-	background-color: black;
-	display: block;
-	width: 50px;
-  float: right;
-}
-
-body {
-	background-color: #FFF;
-}
-
 a {
   text-decoration: none;
   color: RED;
 }
 
 a:hover {
- color: YELLOW; 
+  color: YELLOW; 
 }
 
 .rick {
