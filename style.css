@@ -22,9 +22,39 @@ a:hover {
   transform: translate(0px,0px);
   animation: move 5s linear 3s infinite alternate;
 }
+.marquee {
+  height: 25px;
+  width: 420px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
 
 /*animations*/
 @keyframes move {
   from {transform: translate(0px,0px)}
   to {transform: translate(200px,0px)}
+}
+
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }
