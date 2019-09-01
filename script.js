@@ -1,6 +1,6 @@
 
-var r = 255,
-  g = 255,
+var r = 187,
+  g = 97,
   b = 255,
   flag = 0,
   t = new Array(),

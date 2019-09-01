@@ -30,7 +30,7 @@ a:hover {
   position: relative;
 }
 
-.marquee div {
+.marquee h1 {
   display: block;
   width: 200%;
   height: 30px;
