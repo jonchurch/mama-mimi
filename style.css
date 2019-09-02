@@ -9,7 +9,7 @@ header#site-header h1 {
   font-family: "Gloria Hallelujah", cursive;
 }
 
-a {
+h1 {
   text-decoration: none;
   color: RED;
 }
@@ -22,7 +22,7 @@ a:hover {
   transform: translate(0px,0px);
   animation: move 5s linear 3s infinite alternate;
 }
-.marquee {
+/* .marquee {
   height: 25px;
   width: 420px;
 
@@ -44,7 +44,7 @@ a:hover {
 .marquee span {
   float: left;
   width: 50%;
-}
+} */
 
 
 /*animations*/
@@ -54,7 +54,7 @@ a:hover {
 }
 
 
-@keyframes marquee {
+/* @keyframes marquee {
   0% { left: 0; }
   100% { left: -100%; }
-}
+} */

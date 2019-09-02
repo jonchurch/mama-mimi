@@ -12,14 +12,18 @@
   <body onload="disco()">
     <header id="site-header">
       <div class="marquee">
-      <h1><span>yOu'Ve BeEn HaCkEd By mImI!!!</span></h1>
-        
+      <marquee behavior="scroll" scrollamount="12">
+        <h1><span>yOu'Ve BeEn HaCkEd By mImI!!!</span></h1>
+        </marquee>
       </div>
     </header>
     <content id="site-content">
       <div style="text-align: center; width: 100%">
         <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" width="640" height="530" frameborder="0" style="pointer-events: none;" class="rick"></iframe>
-        <embed src="https://cdn.glitch.com/35c9e1e6-5a4a-463d-983d-280a07d767c3%2FRick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up%20(Video).mp3?1541792810841" width="0" height="0" loop="true" autostart="true" hidden="true" />
+        <!-- <embed src="/public/neverGonna.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" /> -->
+				<audio loop autoplay>
+					<source src="/public/neverGonna.mp3" />
+				</audio>
       </div>
     </content>
   </body>
